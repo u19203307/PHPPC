@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 50px 80px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: black;
+  background-color: blanchedalmond;
+}
+
+pre {
+  margin: 0;
+  font-family: "Fira Code", sans-serif;
+}
+pre code {
+  display: block;
+  tab-size: 4;
+  margin-bottom: 25px;
+  padding: 0 20px;
+  background-color: #0a283c;
+  border-radius: 6px;
+}
+
+.grid-auto-fill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  column-gap: 60px;
+  row-gap: 60px;
+}
+
+.mb-150 {
+  margin-bottom: 150px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card .img-cnt img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px 6px 0 0;
+}
+.card .text-cnt {
+  padding: 20px 25px 15px;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  border-radius: 0 0 6px 6px;
+}
+.card .text-cnt h2 {
+  margin: 0 auto 10px;
+  color: black;
+}
+.card .text-cnt p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
